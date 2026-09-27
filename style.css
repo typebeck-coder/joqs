@@ -1,0 +1,81 @@
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffd6e7, #fff);
+    overflow: hidden;
+}
+.container {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+h1 {
+    font-size: clamp(24px, 5vw, 40px);
+    color: #333;
+    margin-bottom: 40px;
+}
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+button {
+    border: none;
+    padding: 15px 28px;
+    min-width: 130px;
+    font-size: clamp(16px, 3vw, 20px);
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+#brayan {
+    background: #ff5c8a;
+    color: white;
+}
+#brayan:hover {
+    transform: scale(1.08);
+}
+#beatriz {
+    background: #777;
+    color: white;
+    position: relative;
+    transition:
+        left 0.15s ease,
+        top 0.15s ease;
+}
+#mensagem {
+    margin-top: 35px;
+    font-size: clamp(20px, 5vw, 30px);
+    font-weight: bold;
+    color: #ff3f78;
+    line-height: 1.4;
+}
+/* Celular */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+    h1 {
+        margin-bottom: 30px;
+    }
+    .botoes {
+        gap: 12px;
+    }
+    button {
+        min-width: 115px;
+        padding: 14px 18px;
+    }
+}
